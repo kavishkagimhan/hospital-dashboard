@@ -72,11 +72,11 @@ const genPieData = () => {
 
 const ChartPage = () => {
   return (
-    <Page title="Charts" breadcrumbs={[{ name: 'Charts', active: true }]}>
+    <Page title="Patients Analytics" breadcrumbs={[{ name: 'Charts', active: true }]}>
       <Row>
         <Col xl={6} lg={12} md={12}>
           <Card>
-            <CardHeader>Bar</CardHeader>
+            <CardHeader>Visited</CardHeader>
             <CardBody>
               <Bar data={genLineData()} />
             </CardBody>
@@ -85,7 +85,7 @@ const ChartPage = () => {
 
         <Col xl={6} lg={12} md={12}>
           <Card>
-            <CardHeader>Line</CardHeader>
+            <CardHeader>Get treatments</CardHeader>
             <CardBody>
               <Line data={genLineData({ fill: false }, { fill: false })} />
             </CardBody>

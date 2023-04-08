@@ -2,12 +2,12 @@ import Page from 'components/Page';
 import React from 'react';
 import { Card, CardBody, CardHeader, Col, Row, Table } from 'reactstrap';
 
-const tableTypes = ['', 'bordered', 'striped', 'hover'];
+const tableTypes = ['', 'Nurses', 'Employee', 'Cleaning'];
 
 const TablePage = () => {
   return (
     <Page
-      title="Tables"
+      title="Employee Details"
       breadcrumbs={[{ name: 'tables', active: true }]}
       className="TablePage"
     >
@@ -15,7 +15,7 @@ const TablePage = () => {
         <Row key={index}>
           <Col>
             <Card className="mb-3">
-              <CardHeader>{tableType || 'default'}</CardHeader>
+              <CardHeader>{tableType || 'Doctors'}</CardHeader>
               <CardBody>
                 <Row>
                   <Col>

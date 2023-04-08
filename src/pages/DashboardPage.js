@@ -83,7 +83,7 @@ class DashboardPage extends React.Component {
 
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="Monthly Visitors"
+              title="Monthly Patients"
               subtitle="This month"
               number="5,400"
               color="secondary"
@@ -96,7 +96,7 @@ class DashboardPage extends React.Component {
 
           <Col lg={3} md={6} sm={6} xs={12}>
             <NumberWidget
-              title="New Users"
+              title="New Patients"
               subtitle="This month"
               number="3,400"
               color="secondary"
@@ -189,7 +189,7 @@ class DashboardPage extends React.Component {
         <Row>
           <Col md="6" sm="12" xs="12">
             <Card>
-              <CardHeader>New Products</CardHeader>
+              <CardHeader>New Items</CardHeader>
               <CardBody>
                 {productsData.map(
                   ({ id, image, title, description, right }) => (
@@ -208,7 +208,7 @@ class DashboardPage extends React.Component {
 
           <Col md="6" sm="12" xs="12">
             <Card>
-              <CardHeader>New Users</CardHeader>
+              <CardHeader>New Paciensts</CardHeader>
               <CardBody>
                 <UserProgressTable
                   headers={[
